@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+    background-color: #9cadce;
+    padding: 30px;
+    border-radius: 10%;
+}
+
+.text {
+    text-align: center;
+    color: rgb(0, 64, 89);
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+a {
+    color: rgb(1, 126, 176);
+}
+
+.form-control{
+    margin: 50px;
+    position: relative;
+}
+
+.form-control input{
+    outline: none;
+    margin-bottom: 10px;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    border-bottom: 2px #67768a solid;
+    font-size: 16px;
+}
+
+#btn {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: #67768a;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(250, 250, 250);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+#btn:focus{
+    outline: none;
+}
+
+#btn:active{
+    transform: scale(0.98);
+}
+
+.form-control label{
+    position: absolute;
+    font-size: 16px;
+    color: #546173;
+    font-weight: 800;
+    top: 2px;
+    left: 0px;
+    letter-spacing: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    transition: 0.4s cubic-bezier(.7,-0.36,.36,1.35);
+}
+
+.form-control input:focus + label span, .form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
